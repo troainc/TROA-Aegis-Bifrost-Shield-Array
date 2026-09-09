@@ -166,6 +166,11 @@ This project does not currently publish a Workshop item, binary package, dedicat
 - [Detailed changelog](CHANGELOG.md)
 - [Community and contribution policy](CONTRIBUTING.md)
 - [Security and release policy](SECURITY.md)
+- [TROAINC Proprietary License — All Rights Reserved](LICENSE.md)
+
+## Rights and permissions
+
+**Copyright © 2026 TROAINC. All rights reserved.** No permission is granted to copy, redistribute, reuse, modify, extract, mirror, or create derivative works from any project material without prior written TROAINC permission. See the [proprietary license](LICENSE.md).
 
 ## Official communication
 
