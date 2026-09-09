@@ -136,15 +136,19 @@ Supported values:
 | `Combat` | Compact readout plus last hit direction, incoming pressure, and shunt cooldown. |
 | `Off` | Clears the Console LCD output. |
 
-## Compatibility
+## Compatibility and the Aegis Framework
 
-Aegis provides three choices:
+Aegis is built to be useful to server owners, HUD authors, LCD systems, and other authorized mod integrations without turning the shield system into an unreadable black box.
 
-- **Auto** — uses WeaponCore monitoring when a compatible public contract is available; otherwise uses Keen-native handling.
-- **Keen Vanilla** — uses Keen-native handling only.
-- **WeaponCore Bridge** — requests the optional WeaponCore monitor. If it is absent, incompatible, or unavailable, protection safely falls back to Keen-native handling.
+- **Auto** selects the optional WeaponCore monitor when a compatible public contract is available, otherwise it uses Keen-native damage handling.
+- **Keen Vanilla** forces native handling only.
+- **WeaponCore Bridge** requests the optional monitor. If it is absent, incompatible, or unavailable, Aegis visibly and safely falls back to Keen-native protection.
 
-WeaponCore is optional. Its absence must never disable normal Aegis protection. Unknown damage families use the Balanced fallback and are recorded once for diagnostics rather than spamming logs.
+The private beta also maintains a **versioned, read-only Aegis Framework interface** for approved interoperability. Its purpose is to expose authoritative shield information—construct identity, readiness, lifecycle state, charge, current/max energy, directional-bank status, profile, Ship/Station mode, and framework status—without requiring an integration to scrape terminal text or control the shield itself.
+
+The framework is intentionally one-way for normal integrations: it does **not** permit clients, HUD scripts, LCD tools, or external mods to directly remove, restore, duplicate, or otherwise modify shield energy. Any future control endpoint remains server-validated and subject to the same ownership, faction, and friendly-access checks as normal Aegis controls.
+
+The separate **TROA Aegis Visual Framework** is a visual companion used for TROA-owned materials and presentation. It is optional for gameplay: if it is unavailable, Aegis keeps protection active and uses a safe fallback visual path.
 
 ## Multiplayer and ownership
 
@@ -159,6 +163,10 @@ WeaponCore is optional. Its absence must never disable normal Aegis protection. 
 TROAINC will not ship copied code, models, sounds, branding, fonts, interfaces, ships, or other protected franchise assets. “Nordic sci-fi” describes original aesthetic direction, not an affiliation with any existing franchise.
 
 This project does not currently publish a Workshop item, binary package, dedicated-server certification, 1.0 tag, or source code.
+
+## Foundation status
+
+The current beta foundation includes the authoritative shield lifecycle, block roles, terminal and toolbar surface, LCD status formats, HUD data path, visual companion handshake, and the read-only interoperability contract described above. These systems are in private acceptance testing. They are not a public source release, public binary release, or Workshop package.
 
 ## Documentation
 

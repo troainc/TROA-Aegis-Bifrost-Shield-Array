@@ -4,6 +4,15 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased — Reliable Beta
 
+### TROA Aegis Foundation and interoperability
+
+- Documented the custom TROA Aegis Foundation: a private, server-authoritative shield platform with distinct runtime, visual-framework, HUD, validation, and release-staging boundaries.
+- Added the documented direction for a versioned, read-only Aegis Framework interface. Authorized integrations will be able to discover shield construct identity, readiness, lifecycle, charge, energy, directional-bank state, profile, Ship/Station mode, and compatibility status without scraping the terminal UI.
+- Defined the framework security boundary: normal integrations and clients never receive direct authority to consume, restore, duplicate, or modify shield energy. State-changing controls remain server-validated with standard ownership/faction/friendly checks.
+- Documented the optional TROA Aegis Visual Framework companion. It supplies TROA-owned presentation material paths while Aegis gameplay remains operational with safe fallback visuals when it is not present.
+- Confirmed that this repository remains a detailed public information hub only. It contains no private source, binaries, packages, art masters, test worlds, or release staging material.
+
+
 ### Shield lifecycle and construct hardware
 
 - Added active/backup Aegis Core election: one fully functional Core provides capacity while additional working Cores act as hot backups.
