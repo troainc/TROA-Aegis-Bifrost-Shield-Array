@@ -4,6 +4,11 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased — Reliable Beta
 
+### Required Visual Framework dependency
+
+- Made **TROA Aegis Visual Framework** a mandatory Aegis companion. The shield remains OFFLINE and does not provide protection until the framework is installed, enabled, and replies to its runtime handshake.
+- Added the Steam release requirement: the framework will be published separately and configured as an Aegis Workshop Required Item before an authorized public package is released.
+
 ### TROA Aegis Foundation and interoperability
 
 - Documented the custom TROA Aegis Foundation: a private, server-authoritative shield platform with distinct runtime, visual-framework, HUD, validation, and release-staging boundaries.

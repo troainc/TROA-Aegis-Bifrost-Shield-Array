@@ -29,7 +29,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 
 - [ ] Validate the versioned read-only Aegis Framework contract with approved HUD/LCD/mod integrations: construct lookup, state snapshot, directional banks, lifecycle, profile, construct mode, and compatibility status.
 - [ ] Verify framework consumers cannot modify shield energy, bypass authorization, or replace server authority.
-- [ ] Verify the optional Aegis Visual Framework handshake and native visual fallback in single-player and hosted multiplayer.
+- [ ] Publish TROA Aegis Visual Framework independently, configure it as an Aegis Workshop Required Item, and verify automatic dependency installation plus mandatory runtime handshake in single-player and hosted multiplayer.
 
 ### Compatibility and multiplayer
 

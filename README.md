@@ -148,7 +148,7 @@ The private beta also maintains a **versioned, read-only Aegis Framework interfa
 
 The framework is intentionally one-way for normal integrations: it does **not** permit clients, HUD scripts, LCD tools, or external mods to directly remove, restore, duplicate, or otherwise modify shield energy. Any future control endpoint remains server-validated and subject to the same ownership, faction, and friendly-access checks as normal Aegis controls.
 
-The separate **TROA Aegis Visual Framework** is a visual companion used for TROA-owned materials and presentation. It is optional for gameplay: if it is unavailable, Aegis keeps protection active and uses a safe fallback visual path.
+The separate **TROA Aegis Visual Framework** is a required companion used for TROA-owned materials, hex-field presentation, and contact effects. Aegis deliberately remains OFFLINE and provides no protection until the framework is installed, enabled in the same world, and confirms its runtime handshake. At Workshop release, TROAINC will configure it as a Steam Required Item so it is automatically included with Aegis.
 
 ## Multiplayer and ownership
 
