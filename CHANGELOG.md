@@ -2,7 +2,12 @@
 
 All public project updates are recorded here. This changelog describes capabilities and acceptance status; it does not distribute private code, binaries, models, sounds, or production files.
 
-## Unreleased — Reliable Beta
+## Unreleased
+
+### LCD reliability
+
+- External same-construct LCDs now accept either the documented `[TROA Aegis LCD]` Custom Data section or an `[Aegis LCD]` panel-name tag. A valid route with no explicit mode defaults safely to Status instead of remaining blank.
+- Added a permanent private validation gate for Bifrost Console TextPanel registration and external LCD routing. — Reliable Beta
 
 ### Station thermal stabilization
 
