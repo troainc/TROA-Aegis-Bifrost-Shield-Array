@@ -14,3 +14,5 @@
 - Refined the public Reliable Beta roadmap with explicit LCD, Suit Induction, atmosphere, multiplayer, dedicated-server, and documentation-only publication gates.
 
 - Corrected the implementation record: Suit Induction uses the supported server-side Visual Script player-energy API after direct internal character/battery access was rejected by the game compiler.
+
+- Documented the repaired Console LCD Mode selector and robust external LCD parser. Public repository remains source-free.

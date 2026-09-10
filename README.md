@@ -129,14 +129,14 @@ Available palettes include Bifrost Cyan, Aegis Gold, Rune Violet, and High Contr
 
 The Bifrost Console exposes field power, profile, automatic tuning, coverage, directional reinforcement, emergency venting, HUD preferences, visuals, sound, and framework selection through the standard terminal.
 
-The Console LCD is always the primary construct readout. For an additional same-construct LCD, use **Custom Data** to opt into a display mode:
+The Console LCD is always the primary construct readout. Use the Console terminal **Console LCD mode** selector to choose Status, Compact, Combat, or Off; it writes the mode setting automatically. For an additional same-construct LCD, use **Custom Data** to opt into a display mode:
 
 ```ini
 [TROA Aegis LCD]
 Mode=Status
+```
 
 An external panel may instead be named `[Aegis LCD]`; it safely defaults to the Status view. Both routes refresh server-side once per second.
-```
 
 Supported values:
 

@@ -25,7 +25,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 - [ ] Verify Station Atmosphere Seal: oxygen and temperature protection inside active station fields; immediate loss on field failure; no Ship Mode activation; 3 m fixed clearance; 500 m maximum; no interaction with player visual bubble settings; and no suppression of combat/physical damage.
 - [ ] Verify Bubble, Hybrid, Hull Impact, On Contact, Hidden, opacity, palette, and reduced-flash options.
 - [ ] Verify Full and Compact Shield Health HUD modes, hide/show preference, and reconnect persistence.
-- [ ] Verify Bifrost Console LCD always renders its construct state, and external same-construct LCD routing works through both `[TROA Aegis LCD]` Custom Data and `[Aegis LCD]` panel-name routes. Verify `Status`, `Compact`, `Combat`, and `Off`, blank/default recovery, one-second refresh, reload, late join, and no cross-construct output.
+- [ ] Verify Bifrost Console LCD always renders its construct state and its terminal LCD Mode selector switches outputs, and external same-construct LCD routing works through both `[TROA Aegis LCD]` Custom Data and `[Aegis LCD]` panel-name routes. Verify `Status`, `Compact`, `Combat`, and `Off`, blank/default recovery, one-second refresh, reload, late join, and no cross-construct output.
 
 ### Aegis Framework and compatibility
 

@@ -10,3 +10,5 @@ TROA Aegis Visual Framework is a required runtime dependency. Aegis does not arm
 - 2026-09-10: Aegis Suit Induction is a private-beta, server-authoritative friendly suit-recharge feature; it has bounded real-field range, terminal-access authorization, and a shield-energy cost.
 
 - 2026-09-10: Suit Induction is implemented through the supported server-side Visual Script player-energy API; direct internal character/battery access is intentionally prohibited.
+
+- 2026-09-10: Bifrost Console exposes a terminal LCD Mode selector with distinct Status, Compact, Combat, and Off output; external parsing tolerates normal Custom Data formatting variations.
