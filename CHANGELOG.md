@@ -4,6 +4,11 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased — Reliable Beta
 
+### Station Atmosphere Seal
+
+- Added a bounded, station-only Aegis Atmosphere Seal. Active Station Mode shields provide breathable oxygen inside their real field envelope while required station hardware, power, and Visual Framework support remain online.
+- The life-support envelope uses station geometry plus a fixed 3 m clearance and a 500 m maximum. Cosmetic bubble preferences cannot alter oxygen gameplay range; oxygen tanks and ordinary airtight rooms retain their normal behavior.
+
 ### Required Visual Framework dependency
 
 - Made **TROA Aegis Visual Framework** a mandatory Aegis companion. The shield remains OFFLINE and does not provide protection until the framework is installed, enabled, and replies to its runtime handshake.
