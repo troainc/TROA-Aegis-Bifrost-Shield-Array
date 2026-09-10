@@ -51,7 +51,7 @@ Mechanical subgrids can be covered as one construct. Connector-docked grids rema
 
 An online Station Mode field automatically provides a breathable Aegis Atmosphere Seal inside its station envelope. It needs the same active Core, Capacitor Rune, Flux Weave, power, and required Visual Framework as the shield itself. The seal stops when the field is offline, venting, collapsed, or rebooting.
 
-This is bounded to the real station geometry plus a fixed 3 m clearance, up to 500 m. Player visual bubble settings do not alter its gameplay range. The seal does not refill oxygen tanks or replace normal airtight-room mechanics; it supplies breathable oxygen to players inside the active station field.
+This is bounded to the real station geometry plus a fixed 3 m clearance, up to 500 m. Player visual bubble settings do not alter its gameplay range. The seal also prevents ambient temperature, freeze, and cold damage inside the active station field. Weapon, collision, fall, tool, and all other damage remain unchanged. It does not refill oxygen tanks or replace normal airtight-room mechanics; it supplies breathable oxygen and thermal protection to players inside the active station field.
 
 ## Shield states
 

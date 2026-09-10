@@ -4,6 +4,10 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased — Reliable Beta
 
+### Station thermal stabilization
+
+- Extended the active station Atmosphere Seal to cancel only environment temperature/freeze/cold damage for characters inside the field. Combat, collision, fall, tool, and other damage remain unchanged.
+
 ### Station Atmosphere Seal
 
 - Added a bounded, station-only Aegis Atmosphere Seal. Active Station Mode shields provide breathable oxygen inside their real field envelope while required station hardware, power, and Visual Framework support remain online.
