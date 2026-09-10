@@ -4,6 +4,10 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Aegis Suit Induction
+
+- Added friendly-only wireless suit charging inside an active Aegis field. It is server-authoritative, bounded to the real field envelope, requires player access to the construct, runs only in Stable/Recharging state, and consumes shield energy per recipient.
+- The beta defaults to 2.5% suit charge and 20 shield energy per recipient each second; the feature stops on field failure, venting, collapse, or reboot.
 ### LCD reliability
 
 - External same-construct LCDs now accept either the documented `[TROA Aegis LCD]` Custom Data section or an `[Aegis LCD]` panel-name tag. A valid route with no explicit mode defaults safely to Status instead of remaining blank.

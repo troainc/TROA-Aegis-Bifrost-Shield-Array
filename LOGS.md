@@ -8,3 +8,5 @@
 ## 2026-09-10
 
 - Documented the private LCD routing resilience repair. The public repository remains source-free.
+
+- Documented the private-beta Aegis Suit Induction feature and its validation scope. No runtime source or package was added to this public repository.

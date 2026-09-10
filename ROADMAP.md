@@ -21,6 +21,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 - [ ] Verify each damage family and each tactical profile tradeoff.
 - [ ] Verify all six directional banks, reserve use, weak-side warnings, and shunt cooldown.
 - [ ] Verify arming, full charge, active recharge, heat, venting, collapse, and reboot states.
+- [ ] Verify Suit Induction: friendly/terminal-access authorization, Stable/Recharging-only activation, 2.5% suit charge per second, 20 shield-energy cost per recipient, 3 m fixed clearance, 1000 m maximum, immediate stop on field failure, and no client authority.
 - [ ] Verify Station Atmosphere Seal: oxygen and temperature protection inside active station fields; immediate loss on field failure; no Ship Mode activation; 3 m fixed clearance; 500 m maximum; no interaction with player visual bubble settings; and no suppression of combat/physical damage.
 - [ ] Verify Bubble, Hybrid, Hull Impact, On Contact, Hidden, opacity, palette, and reduced-flash options.
 - [ ] Verify Full and Compact Shield Health HUD modes, hide/show preference, and reconnect persistence.
