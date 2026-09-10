@@ -12,3 +12,5 @@
 - Documented the private-beta Aegis Suit Induction feature and its validation scope. No runtime source or package was added to this public repository.
 
 - Refined the public Reliable Beta roadmap with explicit LCD, Suit Induction, atmosphere, multiplayer, dedicated-server, and documentation-only publication gates.
+
+- Corrected the implementation record: Suit Induction uses the supported server-side Visual Script player-energy API after direct internal character/battery access was rejected by the game compiler.
