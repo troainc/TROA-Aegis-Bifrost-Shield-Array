@@ -4,6 +4,10 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Roadmap refinement
+
+- Expanded Reliable Beta acceptance coverage for Bifrost Console/external LCD recovery and routing, Suit Induction authorization/energy/range behavior, atmosphere-seal interaction, late join, and dedicated-server validation.
+- Clarified that the public repository remains documentation-only unless TROAINC separately authorizes source publication.
 ### Aegis Suit Induction
 
 - Added friendly-only wireless suit charging inside an active Aegis field. It is server-authoritative, bounded to the real field envelope, requires player access to the construct, runs only in Stable/Recharging state, and consumes shield energy per recipient.

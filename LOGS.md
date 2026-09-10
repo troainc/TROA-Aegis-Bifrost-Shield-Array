@@ -10,3 +10,5 @@
 - Documented the private LCD routing resilience repair. The public repository remains source-free.
 
 - Documented the private-beta Aegis Suit Induction feature and its validation scope. No runtime source or package was added to this public repository.
+
+- Refined the public Reliable Beta roadmap with explicit LCD, Suit Induction, atmosphere, multiplayer, dedicated-server, and documentation-only publication gates.

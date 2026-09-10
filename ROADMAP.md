@@ -25,7 +25,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 - [ ] Verify Station Atmosphere Seal: oxygen and temperature protection inside active station fields; immediate loss on field failure; no Ship Mode activation; 3 m fixed clearance; 500 m maximum; no interaction with player visual bubble settings; and no suppression of combat/physical damage.
 - [ ] Verify Bubble, Hybrid, Hull Impact, On Contact, Hidden, opacity, palette, and reduced-flash options.
 - [ ] Verify Full and Compact Shield Health HUD modes, hide/show preference, and reconnect persistence.
-- [ ] Verify Console LCD `Status`, `Compact`, `Combat`, and `Off` modes.
+- [ ] Verify Bifrost Console LCD always renders its construct state, and external same-construct LCD routing works through both `[TROA Aegis LCD]` Custom Data and `[Aegis LCD]` panel-name routes. Verify `Status`, `Compact`, `Combat`, and `Off`, blank/default recovery, one-second refresh, reload, late join, and no cross-construct output.
 
 ### Aegis Framework and compatibility
 
@@ -39,7 +39,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 - [ ] Verify compatible WeaponCore monitoring.
 - [ ] Verify incompatible or unavailable WeaponCore safely falls back to Keen-native handling.
 - [ ] Verify owner, faction, and friendly control authorization server-side.
-- [ ] Verify hosted multiplayer controls, status, audio, and visuals for late-joining players.
+- [ ] Verify hosted multiplayer controls, status, audio, visuals, Console/LCD routing, and Suit Induction for late-joining players.
 
 ## 1.0 release certification
 
@@ -51,7 +51,7 @@ A public 1.0 package is gated on all of the following:
 - Stable memory use and bounded network traffic.
 - Final localization-ready player, administrator, API, compatibility, installation, and troubleshooting documentation.
 - Full provenance review of every shipped code, model, texture, sound, icon, and marketing asset.
-- A reproducible release package built from an authorized tagged private revision.
+- A reproducible release package built from an authorized tagged private revision, with the public repository remaining documentation-only unless TROAINC separately authorizes source publication.
 
 ## Publication policy
 
