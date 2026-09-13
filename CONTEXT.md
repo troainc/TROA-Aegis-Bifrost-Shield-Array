@@ -12,3 +12,7 @@ TROA Aegis Visual Framework is a required runtime dependency. Aegis does not arm
 - 2026-09-10: Suit Induction is implemented through the supported server-side Visual Script player-energy API; direct internal character/battery access is intentionally prohibited.
 
 - 2026-09-10: Bifrost Console exposes a terminal LCD Mode selector with distinct Status, Compact, Combat, and Off output; external parsing tolerates normal Custom Data formatting variations.
+
+- 2026-09-13: Aegis Life-Support Seal is implemented privately for both ships and stations. Ships are constrained to live construct bounds plus 10 m; stations require Core + Capacitor Rune + Flux Weave and use their bounded station envelope. It provides O2, narrow ambient thermal protection, and authorized Suit Induction only while the field is active.
+
+- 2026-09-13: Aegis controls are role-specific. Bifrost Console owns player-local presentation preferences; Capacitor owns reserve allocation; Flux owns recharge/venting; Harmonic owns profile/tuning; Relay owns coverage/facings. Native Space Engineers functional-block controls remain on every block.

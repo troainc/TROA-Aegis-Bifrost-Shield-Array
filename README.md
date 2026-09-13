@@ -30,11 +30,11 @@ Aegis is not intended to be a magic “invulnerable ship” switch. A working sh
 | Block | Purpose |
 | --- | --- |
 | **Aegis Core** | Required shield projector. Establishes baseline capacity and recharge. One Core is elected active; additional working Cores are hot backups rather than duplicate capacity. |
-| **Bifrost Console** | Command authority, live diagnostics, player HUD and presentation preferences, LCD output routing, and framework selection. |
-| **Capacitor Rune** | Adds stored-energy reserve. Required for a station field. |
-| **Flux Weave** | Improves recharge at a bounded power/heat cost. Required for a station field. |
-| **Harmonic Modulator** | Enables deterministic automatic profile tuning from recent incoming damage. |
-| **Gjallarhorn Relay** | Improves collapse recovery and supports mechanical-construct coordination. |
+| **Bifrost Console** | Command authority, live diagnostics, LCD routing, framework selection, and the sole player-local HUD/presentation settings surface. |
+| **Capacitor Rune** | Adds stored-energy reserve. Its 5–50% reserve allocation changes the actual reserve-bank capacity. Required for a station field. |
+| **Flux Weave** | Its independent 0–200% allocation changes Flux recharge output and its own power draw; it also provides emergency venting. Required for a station field. |
+| **Harmonic Modulator** | Owns shield profile selection and deterministic automatic tuning from recent incoming damage. |
+| **Gjallarhorn Relay** | Owns Main Grid/Mechanical Construct coverage and directional reinforcement; also improves collapse recovery. |
 
 Large and small variants are planned where the block role supports them.
 
@@ -47,14 +47,14 @@ Aegis detects construct mode automatically:
 
 Mechanical subgrids can be covered as one construct. Connector-docked grids remain excluded by default so visiting ships are not silently absorbed into a field.
 
-### Aegis Suit Induction
+### Aegis Life-Support Seal and Suit Induction
 
-An active Aegis field can wirelessly recharge the suit energy of players who have access to an Aegis block on that construct. This is server-authoritative: it runs only while the field is Stable or Recharging, uses the real construct field envelope (up to 1000 m with a fixed 3 m clearance), and never follows a player-local visual setting. It uses the supported server-side Visual Script player-energy API rather than prohibited internal character/battery access. Each charged player receives a modest 2.5% suit-energy recharge per second while the field spends 20 shield energy per second. Unauthorized or hostile players cannot receive induction, and the effect immediately stops when the field is down, venting, collapsed, or rebooting.
-### Station Atmosphere Seal
+An active Aegis field provides a bounded life-support seal: breathable O₂, ambient temperature/freeze/cold protection, and authorized wireless suit induction. It is server-authoritative, runs only while the field is Stable or Recharging, requires the same power and Visual Framework handshake as protection, and never follows player-local visual bubble settings.
 
-An online Station Mode field automatically provides a breathable Aegis Atmosphere Seal inside its station envelope. It needs the same active Core, Capacitor Rune, Flux Weave, power, and required Visual Framework as the shield itself. The seal stops when the field is offline, venting, collapsed, or rebooting.
+- **Ships:** one powered Core enables life support only inside the construct’s live grid bounds plus **10 m**.
+- **Stations:** powered Core + Capacitor Rune + Flux Weave enable life support within the real station geometry plus **3 m**, capped at **500 m**.
 
-This is bounded to the real station geometry plus a fixed 3 m clearance, up to 500 m. Player visual bubble settings do not alter its gameplay range. The seal also prevents ambient temperature, freeze, and cold damage inside the active station field. Weapon, collision, fall, tool, and all other damage remain unchanged. It does not refill oxygen tanks or replace normal airtight-room mechanics; it supplies breathable oxygen and thermal protection to players inside the active station field.
+Suit Induction uses the supported server-side Visual Script player-energy API. Authorized players receive 2.5% suit energy per second while the field spends 20 shield energy per player each second. Unauthorized or hostile players cannot receive induction, and all life support stops when the field is down, venting, collapsed, or rebooting. The seal does not refill oxygen tanks or replace normal airtight-room mechanics. Weapon, collision, fall, tool, and all other damage remain unchanged.
 
 ## Shield states
 
@@ -109,13 +109,13 @@ It reports:
 - All six directional bank values in Full layout.
 - Last threatened facing and recent incoming damage pressure.
 
-Use **HUD shield status** to show or hide it, and **HUD layout** to choose Full or Compact. Color, opacity, reduced-flash, and shield-presentation choices are personal preferences.
+Use the **Bifrost Console** for **HUD shield status**, **HUD layout**, color, opacity, reduced-flash, sounds, and shield-presentation preferences. These are player-local preferences; no module block duplicates them.
 
 Space Engineers controls the native notification overlay’s exact screen position. Aegis refreshes the HUD persistently for the player’s nearest shielded construct; it does not use unsafe internal UI hooks.
 
 ## Shield presentation
 
-Each player can choose a cosmetic presentation without changing gameplay:
+Each player can choose a cosmetic presentation from the **Bifrost Console** without changing gameplay:
 
 - Bubble Shield
 - Hybrid Bubble
@@ -127,7 +127,9 @@ Available palettes include Bifrost Cyan, Aegis Gold, Rune Violet, and High Contr
 
 ## Console and LCD controls
 
-The Bifrost Console exposes field power, profile, automatic tuning, coverage, directional reinforcement, emergency venting, HUD preferences, visuals, sound, and framework selection through the standard terminal.
+The Bifrost Console exposes full field administration, master field power, framework selection, LCD routing, and player-local HUD/presentation settings. The other Aegis blocks expose only their own system purpose: Capacitor reserve allocation, Flux recharge allocation/venting, Harmonic profile/tuning, and Relay coverage/directional reinforcement.
+
+All Aegis functional blocks retain native Space Engineers controls such as On/Off, Show in Terminal, Show on HUD, name, ownership, and normal toolbar placement.
 
 The Console LCD is always the primary construct readout. Use the Console terminal **Console LCD mode** selector to choose Status, Compact, Combat, or Off; it writes the mode setting automatically. For an additional same-construct LCD, use **Custom Data** to opt into a display mode:
 

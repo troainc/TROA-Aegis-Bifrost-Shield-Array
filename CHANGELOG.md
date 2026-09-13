@@ -4,6 +4,17 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Ship and Station life-support seal
+
+- Expanded the active Aegis life-support system to both construct modes. Ships provide O₂, ambient thermal protection, and authorized Suit Induction only within live grid bounds plus 10 m; stations retain their Core + Capacitor Rune + Flux Weave requirement and 3 m / 500 m station envelope.
+- Added a safe retry for engine oxygen-provider registration after world load, preventing an otherwise valid active field from missing the seal because the game oxygen service started later than Aegis.
+- Clarified that Suit Induction uses the same active life-support envelope, charges authorized players by 2.5% per second, costs 20 shield energy per recipient per second, and never affects hostile/unauthorized players or combat damage.
+
+### Role-specific controls
+
+- Replaced cloned Aegis controls with distinct block roles: Core/Console administer the construct; Capacitor Rune changes actual reserve-bank capacity; Flux Weave changes only its recharge/power allocation and vents; Harmonic Modulator owns profile/tuning; Gjallarhorn Relay owns coverage/facings.
+- Moved player-local HUD, sound, presentation, color/RGB, opacity, bubble-presentation, and reduced-flash preferences to Bifrost Console only. Every Aegis block retains native Space Engineers functional-block controls.
+
 ### Roadmap refinement
 
 - Expanded Reliable Beta acceptance coverage for Bifrost Console/external LCD recovery and routing, Suit Induction authorization/energy/range behavior, atmosphere-seal interaction, late join, and dedicated-server validation.
