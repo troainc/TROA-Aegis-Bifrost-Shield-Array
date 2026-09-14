@@ -2,6 +2,7 @@
 
 ## 2026-09-13
 
+- Documented direct visible-surface terminal access across all Aegis block variants. No source, models, binaries, packages, or private assets were added to this public repository.
 - Documented the private-beta Aegis Life-Support Seal for both ships and stations: O2, narrow ambient thermal protection, and authorized Suit Induction with explicit Ship Mode 10 m and Station Mode 3 m / 500 m bounds.
 - Documented the oxygen-provider registration recovery behavior and the role-specific control layout. No source, binaries, packages, or other private implementation assets were added to this public repository.
 

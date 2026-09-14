@@ -38,6 +38,14 @@ Aegis is not intended to be a magic “invulnerable ship” switch. A working sh
 
 Large and small variants are planned where the block role supports them.
 
+### Direct player access
+
+Every Aegis functional block can be opened directly by aiming at its visible
+surface and using the normal Space Engineers terminal interaction. This avoids
+an inaccessible top-side interaction point while preserving each block's
+role-specific Aegis controls and native On/Off, ownership, terminal-list, HUD,
+name, and toolbar controls.
+
 ## Ship and Station behavior
 
 Aegis detects construct mode automatically:

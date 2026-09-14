@@ -4,6 +4,11 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Direct player access
+
+- Documented the all-block interaction correction: players can aim at the visible surface of Core, Console, Capacitor Rune, Flux Weave, Harmonic Modulator, or Gjallarhorn Relay blocks to open their terminal rather than being routed to a top-side interaction point.
+- This preserves role-specific Aegis controls while retaining standard Space Engineers functional-block controls on every block.
+
 ### Ship and Station life-support seal
 
 - Expanded the active Aegis life-support system to both construct modes. Ships provide O₂, ambient thermal protection, and authorized Suit Induction only within live grid bounds plus 10 m; stations retain their Core + Capacitor Rune + Flux Weave requirement and 3 m / 500 m station envelope.
