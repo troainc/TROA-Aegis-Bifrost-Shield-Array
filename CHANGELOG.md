@@ -4,6 +4,12 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Protection reliability and per-block power controls
+
+- Repaired the private-beta server protection path to resolve both normal block and cube-block damage callbacks before directional-bank absorption. A charged, powered Aegis field now spends shield energy before protected grid blocks receive that damage.
+- Decoupled visual-framework message timing from authoritative shield operation. The Visual Framework remains a required packaged/Workshop companion, but a delayed presentation handshake can no longer turn an otherwise valid field into pass-through protection.
+- Added a visible **Aegis module enabled** control and matching toolbar toggle to every functional Aegis role. Disabling a block removes only its specific contribution: Core capacity/recharge, Capacitor reserve, Flux recharge/station requirement, Harmonic tuning, Relay coverage/reinforcement, or Console access.
+
 ### Direct player access
 
 - Documented the all-block interaction correction: players can aim at the visible surface of Core, Console, Capacitor Rune, Flux Weave, Harmonic Modulator, or Gjallarhorn Relay blocks to open their terminal rather than being routed to a top-side interaction point.

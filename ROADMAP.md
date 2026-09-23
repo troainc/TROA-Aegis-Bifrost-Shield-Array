@@ -18,12 +18,12 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 
 ### Combat and presentation
 
-- [ ] Verify each damage family and each tactical profile tradeoff.
+- [ ] Verify each damage family and each tactical profile tradeoff, including both normal SlimBlock and CubeBlock damage callback paths; a charged, powered field must debit its bank before grid integrity falls.
 - [ ] Verify all six directional banks, reserve use, weak-side warnings, and shunt cooldown.
 - [ ] Verify arming, full charge, active recharge, heat, venting, collapse, and reboot states.
 - [ ] Verify Suit Induction through the supported Visual Script player-energy API: friendly/terminal-access authorization, Stable/Recharging-only activation, 2.5% suit charge per second, 20 shield-energy cost per recipient, immediate stop on field failure, and no client authority. Verify ship induction is constrained to live grid bounds plus 10 m and station induction uses the active station envelope.
 - [ ] Verify Aegis Life-Support Seal: oxygen and temperature protection in active Ship and Station fields; immediate loss on field failure; Ship Mode limited to live grid bounds plus 10 m; Station Mode requiring Core + Capacitor + Flux and limited to 3 m clearance / 500 m maximum; no interaction with player visual bubble settings; and no suppression of combat/physical damage.
-- [ ] Verify role-specific terminal and toolbar controls: Core/Console master administration, Capacitor reserve allocation, Flux recharge/venting, Harmonic profile/tuning, Relay coverage/facings, Console-only personal presentation, and native Space Engineers functional-block controls on every Aegis block.
+- [ ] Verify role-specific terminal and toolbar controls: Core/Console master administration, Capacitor reserve allocation, Flux recharge/venting, Harmonic profile/tuning, Relay coverage/facings, Console-only personal presentation, native Space Engineers functional-block controls, and the explicit module On/Off switch on every Aegis block.
 - [ ] Verify direct player interaction on the visible surface of every Core, Console, Capacitor Rune, Flux Weave, Harmonic Modulator, and Gjallarhorn Relay variant; no terminal interaction may require aiming at an inaccessible top-side point.
 - [ ] Verify Bubble, Hybrid, Hull Impact, On Contact, Hidden, opacity, palette, and reduced-flash options.
 - [ ] Verify Full and Compact Shield Health HUD modes, hide/show preference, and reconnect persistence.
@@ -33,7 +33,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 
 - [ ] Validate the versioned read-only Aegis Framework contract with approved HUD/LCD/mod integrations: construct lookup, state snapshot, directional banks, lifecycle, profile, construct mode, and compatibility status.
 - [ ] Verify framework consumers cannot modify shield energy, bypass authorization, or replace server authority.
-- [ ] Publish TROA Aegis Visual Framework independently, configure it as an Aegis Workshop Required Item, and verify automatic dependency installation plus mandatory runtime handshake in single-player and hosted multiplayer.
+- [ ] Publish TROA Aegis Visual Framework independently, configure it as an Aegis Workshop Required Item, and verify automatic dependency installation plus visual readiness in single-player and hosted multiplayer. A delayed presentation handshake must never affect authoritative field arming or damage interception.
 
 ### Compatibility and multiplayer
 

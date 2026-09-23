@@ -4,7 +4,8 @@ TROA Aegis Bifrost Shield Array is a proprietary TROAINC Space Engineers shield 
 
 The public repository is an information hub only. The active runtime, Aegis Visual Framework, client HUD, models, textures, sounds, tests, and packages remain private in Foundry.
 
-TROA Aegis Visual Framework is a required runtime dependency. Aegis does not arm or provide protection until the framework is enabled in the same world and answers its readiness handshake. Before an authorized Workshop release, TROAINC must publish the framework and configure it as an Aegis Steam Required Item.
+TROA Aegis Visual Framework is a required packaged runtime companion. It provides the TROA visual contract and must be enabled through the eventual Workshop Required Items chain, but visual readiness is not an authority gate: a delayed handshake cannot prevent valid server-side protection. Before an authorized Workshop release, TROAINC must publish the framework and configure it as an Aegis Steam Required Item.
+- 2026-09-23: Private beta repaired authoritative block-damage interception and added a synchronized module On/Off control plus toolbar toggle on every functional Aegis block. Public documentation only; no implementation or release artifact is present here.
 - 2026-09-13: Every Aegis block supports direct visible-surface player terminal access, retaining native functional-block controls and its own role-specific Aegis controls. The public repository remains documentation-only.
 - 2026-09-10: LCD status output supports documented Custom Data routing and a resilient [Aegis LCD] external panel-name tag; runtime source remains private in Foundry.
 

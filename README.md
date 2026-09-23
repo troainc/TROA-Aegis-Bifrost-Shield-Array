@@ -44,7 +44,9 @@ Every Aegis functional block can be opened directly by aiming at its visible
 surface and using the normal Space Engineers terminal interaction. This avoids
 an inaccessible top-side interaction point while preserving each block's
 role-specific Aegis controls and native On/Off, ownership, terminal-list, HUD,
-name, and toolbar controls.
+name, and toolbar controls. Every role also exposes an explicit **Aegis module
+enabled** switch and a matching toolbar toggle, so players can intentionally
+take an individual Core, Console, Capacitor, Flux, Harmonic, or Relay offline.
 
 ## Ship and Station behavior
 
@@ -57,7 +59,7 @@ Mechanical subgrids can be covered as one construct. Connector-docked grids rema
 
 ### Aegis Life-Support Seal and Suit Induction
 
-An active Aegis field provides a bounded life-support seal: breathable O₂, ambient temperature/freeze/cold protection, and authorized wireless suit induction. It is server-authoritative, runs only while the field is Stable or Recharging, requires the same power and Visual Framework handshake as protection, and never follows player-local visual bubble settings.
+An active Aegis field provides a bounded life-support seal: breathable O₂, ambient temperature/freeze/cold protection, and authorized wireless suit induction. It is server-authoritative, runs only while the field is Stable or Recharging, requires the same gameplay hardware as protection, and never follows player-local visual bubble settings. The required Visual Framework provides the packaged visual experience, but a delayed visual readiness message cannot disable server-side protection.
 
 - **Ships:** one powered Core enables life support only inside the construct’s live grid bounds plus **10 m**.
 - **Stations:** powered Core + Capacitor Rune + Flux Weave enable life support within the real station geometry plus **3 m**, capped at **500 m**.

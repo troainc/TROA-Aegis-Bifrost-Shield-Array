@@ -1,5 +1,11 @@
 # Public Documentation Log
 
+## 2026-09-23
+
+- Documented the private-beta reliability repair: server-side shielding now covers normal and cube-block damage callback targets, while Visual Framework message timing cannot disable authoritative shielding.
+- Documented the explicit synchronized module On/Off switch and toolbar toggle for every Aegis functional block, preserving each role's separate gameplay purpose.
+- No source, binary, mod package, model, texture, sound, test save, or other private implementation artifact was added to this public repository.
+
 ## 2026-09-13
 
 - Documented direct visible-surface terminal access across all Aegis block variants. No source, models, binaries, packages, or private assets were added to this public repository.
