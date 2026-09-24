@@ -10,6 +10,7 @@ All public project updates are recorded here. This changelog describes capabilit
 - Signature traces are temporary (15 seconds) and appear as Local, Departure, or Arrival events with jump distance on Console Status, Combat LCD, and the Shield Health HUD.
 - The feature never modifies Jump Drive operation, shield energy, damage, authorization, or player identity. The public repository remains documentation-only.
 - Routed the private-beta transit pulse through the required Aegis Visual Framework's dedicated presentation material while retaining gameplay detection and authority in the shield runtime.
+- Added physical grid-size scaling: a 25 m-radius hull establishes the 1.0× / 50 km baseline; larger jumping grids create proportionally larger pulses and stronger signatures, capped at 2.5× / 125 km.
 
 ### Protection reliability and per-block power controls
 

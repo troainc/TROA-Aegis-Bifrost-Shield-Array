@@ -5,6 +5,7 @@
 - Documented Bifrost Transit Signature: private-beta, server-authoritative, read-only jump-event telemetry with bounded 1 km/50 km/15 second behavior and Console, Combat LCD, HUD, and API readouts.
 - Confirmed that no source code, binaries, packages, models, textures, sounds, test saves, or private implementation data was added to this public repository.
 - Documented the framework visual-material route for Transit Signature while retaining this repository's documentation-only boundary.
+- Documented bounded physical grid-size scaling for Transit Signature: 1.0× / 50 km at a 25 m hull radius, capped at 2.5× / 125 km for larger grids.
 
 ## 2026-09-23
 
