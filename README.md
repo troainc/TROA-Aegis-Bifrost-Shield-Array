@@ -92,6 +92,7 @@ To prevent rapid abuse, directional shunting has a **two-second cooldown**. The 
 - A displacement of **1 km or more** creates a 15-second trace for active Aegis constructs within **50 km** of the jump origin or destination.
 - Console Status, Combat LCD, and the Shield Health HUD report the trace as **LOCAL**, **DEPARTURE**, or **ARRIVAL**, including jump distance and remaining time.
 - Integrations can read the same non-authoritative result through the documented read-only Aegis Framework API. No integration receives jump-drive or shield-energy authority.
+- The required Aegis Visual Framework supplies the dedicated transit-pulse presentation material; detection remains in the server-authoritative Aegis runtime.
 
 ## Tactical profiles
 

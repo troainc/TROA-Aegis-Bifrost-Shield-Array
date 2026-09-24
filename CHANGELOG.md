@@ -9,6 +9,7 @@ All public project updates are recorded here. This changelog describes capabilit
 - Added the private-beta **Bifrost Transit Signature** feature: a server-authoritative, read-only indicator for loaded vanilla jump-drive displacements of at least 1 km within 50 km of an active Aegis construct.
 - Signature traces are temporary (15 seconds) and appear as Local, Departure, or Arrival events with jump distance on Console Status, Combat LCD, and the Shield Health HUD.
 - The feature never modifies Jump Drive operation, shield energy, damage, authorization, or player identity. The public repository remains documentation-only.
+- Routed the private-beta transit pulse through the required Aegis Visual Framework's dedicated presentation material while retaining gameplay detection and authority in the shield runtime.
 
 ### Protection reliability and per-block power controls
 
