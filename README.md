@@ -84,6 +84,15 @@ Shield energy is conserved across six directional banks plus a reserve bank. You
 
 To prevent rapid abuse, directional shunting has a **two-second cooldown**. The HUD and Combat LCD mode identify the last pressured facing and current incoming damage pressure.
 
+## Bifrost Transit Signature
+
+**Bifrost Transit Signature** is Aegis' original jump-event sensor. It is informational only: it does not block, steer, drain, identify occupants of, or otherwise alter vanilla Jump Drives.
+
+- The server samples loaded jump-drive grids once per second.
+- A displacement of **1 km or more** creates a 15-second trace for active Aegis constructs within **50 km** of the jump origin or destination.
+- Console Status, Combat LCD, and the Shield Health HUD report the trace as **LOCAL**, **DEPARTURE**, or **ARRIVAL**, including jump distance and remaining time.
+- Integrations can read the same non-authoritative result through the documented read-only Aegis Framework API. No integration receives jump-drive or shield-energy authority.
+
 ## Tactical profiles
 
 The following original profiles are designed to specialize, not immunize:

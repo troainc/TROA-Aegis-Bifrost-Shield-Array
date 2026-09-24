@@ -4,6 +4,12 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Bifrost Transit Signature
+
+- Added the private-beta **Bifrost Transit Signature** feature: a server-authoritative, read-only indicator for loaded vanilla jump-drive displacements of at least 1 km within 50 km of an active Aegis construct.
+- Signature traces are temporary (15 seconds) and appear as Local, Departure, or Arrival events with jump distance on Console Status, Combat LCD, and the Shield Health HUD.
+- The feature never modifies Jump Drive operation, shield energy, damage, authorization, or player identity. The public repository remains documentation-only.
+
 ### Protection reliability and per-block power controls
 
 - Repaired the private-beta server protection path to resolve both normal block and cube-block damage callbacks before directional-bank absorption. A charged, powered Aegis field now spends shield energy before protected grid blocks receive that damage.

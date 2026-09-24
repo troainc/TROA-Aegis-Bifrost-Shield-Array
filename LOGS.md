@@ -1,5 +1,10 @@
 # Public Documentation Log
 
+## 2026-09-24
+
+- Documented Bifrost Transit Signature: private-beta, server-authoritative, read-only jump-event telemetry with bounded 1 km/50 km/15 second behavior and Console, Combat LCD, HUD, and API readouts.
+- Confirmed that no source code, binaries, packages, models, textures, sounds, test saves, or private implementation data was added to this public repository.
+
 ## 2026-09-23
 
 - Documented the private-beta reliability repair: server-side shielding now covers normal and cube-block damage callback targets, while Visual Framework message timing cannot disable authoritative shielding.
