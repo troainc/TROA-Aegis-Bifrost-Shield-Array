@@ -94,6 +94,7 @@ To prevent rapid abuse, directional shunting has a **two-second cooldown**. The 
 - Integrations can read the same non-authoritative result through the documented read-only Aegis Framework API. No integration receives jump-drive or shield-energy authority.
 - The required Aegis Visual Framework supplies the dedicated transit-pulse presentation material; detection remains in the server-authoritative Aegis runtime.
 - **Bifrost Wake Dust** adds a short cyan-to-violet particulate wake at both trace endpoints. It is a bounded, client-side cosmetic effect that scales with signature class, follows each player's Hidden and reduced-flash preferences, and cannot affect jump, shield, or damage behavior.
+- **Bifrost Jump Wave** adds the companion endpoint surge: the departure point contracts violet-to-cyan while the arrival point expands cyan-to-violet. It is bounded, client-side, scaled by grid signature class, governed by Hidden/reduced-flash preferences, and cannot delay, redirect, power, protect, or otherwise alter a vanilla Jump Drive.
 
 ## Tactical profiles
 
@@ -129,10 +130,12 @@ It reports:
 - Heat, profile, Ship/Station mode, and compatibility framework state.
 - All six directional bank values in Full layout.
 - Last threatened facing and recent incoming damage pressure.
+- Power allocation, profile, framework route, and directional shunt cooldown.
+- For Station Mode, the active/stopped state of the bounded O₂ and thermal Life-Support Seal.
 
 Use the **Bifrost Console** for **HUD shield status**, **HUD layout**, color, opacity, reduced-flash, sounds, and shield-presentation preferences. These are player-local preferences; no module block duplicates them.
 
-Space Engineers controls the native notification overlay’s exact screen position. Aegis refreshes the HUD persistently for the player’s nearest shielded construct; it does not use unsafe internal UI hooks.
+For private-beta testing, the required Visual Framework includes a private client-side renderer for the exact top-right widget. It draws locally every client update from a read-only snapshot refreshed four times per second. It never sends controls, changes a shield, or changes another player’s display. The normal game notification fallback remains available if that optional renderer is unavailable.
 
 ## Shield presentation
 

@@ -12,6 +12,13 @@ All public project updates are recorded here. This changelog describes capabilit
 - Routed the private-beta transit pulse through the required Aegis Visual Framework's dedicated presentation material while retaining gameplay detection and authority in the shield runtime.
 - Added physical grid-size scaling: a 25 m-radius hull establishes the 1.0× / 50 km baseline; larger jumping grids create proportionally larger pulses and stronger signatures, capped at 2.5× / 125 km.
 - Added **Bifrost Wake Dust** presentation: a short cyan/violet particle wake at departure and arrival that is client-only, bounded, size-scaled, and governed by each player's Hidden and reduced-flash preferences. It supplies no gameplay authority.
+- Added **Bifrost Jump Wave** presentation: a bounded multi-shell surge at both jump endpoints. Departure contracts violet-to-cyan and arrival expands cyan-to-violet; the effect shares the required Visual Framework material route, scales by grid signature class, respects accessibility preferences, and never modifies vanilla Jump Drive behavior.
+
+### Real-time Shield Health HUD
+
+- Moved the private-beta exact-position Shield Health renderer into the required Visual Framework boundary. It draws a compact top-right panel every client update while consuming a versioned, read-only snapshot at four updates per second.
+- The Full layout documents field state, charge percentage/current/maximum energy, heat, power allocation, tactical profile, compatibility route, six directional banks, last-hit pressure, shunt cooldown, Ship/Station mode, and Station Mode seal status.
+- The HUD remains cosmetic and player-local. It has no state-changing endpoint and cannot modify shield energy, damage, lifecycle, authorization, jump behavior, or another player's display.
 
 ### Protection reliability and per-block power controls
 

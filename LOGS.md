@@ -7,6 +7,7 @@
 - Documented the framework visual-material route for Transit Signature while retaining this repository's documentation-only boundary.
 - Documented bounded physical grid-size scaling for Transit Signature: 1.0× / 50 km at a 25 m hull radius, capped at 2.5× / 125 km for larger grids.
 - Documented Bifrost Wake Dust as a bounded client-only cyan/violet departure-and-arrival presentation layer. No source, binaries, assets, or private runtime details were added to this public repository.
+- Documented Bifrost Jump Wave as the bounded client-only departure/arrival field surge and documented the private-beta real-time top-right Shield Health HUD renderer. No source, binary, package, asset, test save, or private implementation detail was added to this public repository.
 
 ## 2026-09-23
 

@@ -19,7 +19,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 ### Combat and presentation
 
 - [ ] Verify each damage family and each tactical profile tradeoff, including both normal SlimBlock and CubeBlock damage callback paths; a charged, powered field must debit its bank before grid integrity falls.
-- [ ] Verify Bifrost Transit Signature with local, departing, and arriving vanilla jump-drive grids: 1 km threshold; 25 m-radius 1.0× / 50 km baseline; bounded 2.5× / 125 km large-grid scaling; 15-second expiry; Console/Combat LCD/HUD output; late-join snapshot; bounded client-only Bifrost Wake Dust at departure and arrival respecting Hidden/reduced-flash; and no change to Jump Drive behavior or shield energy.
+- [ ] Verify Bifrost Transit Signature with local, departing, and arriving vanilla jump-drive grids: 1 km threshold; 25 m-radius 1.0× / 50 km baseline; bounded 2.5× / 125 km large-grid scaling; 15-second expiry; Console/Combat LCD/HUD output; late-join snapshot; bounded client-only Bifrost Wake Dust plus Bifrost Jump Wave at departure/arrival respecting Hidden/reduced-flash; and no change to Jump Drive behavior or shield energy.
 - [ ] Verify all six directional banks, reserve use, weak-side warnings, and shunt cooldown.
 - [ ] Verify arming, full charge, active recharge, heat, venting, collapse, and reboot states.
 - [ ] Verify Suit Induction through the supported Visual Script player-energy API: friendly/terminal-access authorization, Stable/Recharging-only activation, 2.5% suit charge per second, 20 shield-energy cost per recipient, immediate stop on field failure, and no client authority. Verify ship induction is constrained to live grid bounds plus 10 m and station induction uses the active station envelope.
@@ -27,7 +27,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 - [ ] Verify role-specific terminal and toolbar controls: Core/Console master administration, Capacitor reserve allocation, Flux recharge/venting, Harmonic profile/tuning, Relay coverage/facings, Console-only personal presentation, native Space Engineers functional-block controls, and the explicit module On/Off switch on every Aegis block.
 - [ ] Verify direct player interaction on the visible surface of every Core, Console, Capacitor Rune, Flux Weave, Harmonic Modulator, and Gjallarhorn Relay variant; no terminal interaction may require aiming at an inaccessible top-side point.
 - [ ] Verify Bubble, Hybrid, Hull Impact, On Contact, Hidden, opacity, palette, and reduced-flash options.
-- [ ] Verify Full and Compact Shield Health HUD modes, hide/show preference, and reconnect persistence.
+- [ ] Verify Full and Compact Shield Health HUD modes, hide/show preference, top-right real-time Visual Framework renderer, notification fallback, Ship/Station telemetry, six-bank/pressure/shunt display, reconnect persistence, and no client-to-server control authority.
 - [ ] Verify Bifrost Console LCD always renders its construct state and its terminal LCD Mode selector switches outputs, and external same-construct LCD routing works through both `[TROA Aegis LCD]` Custom Data and `[Aegis LCD]` panel-name routes. Verify `Status`, `Compact`, `Combat`, and `Off`, blank/default recovery, one-second refresh, reload, late join, and no cross-construct output.
 
 ### Aegis Framework and compatibility
