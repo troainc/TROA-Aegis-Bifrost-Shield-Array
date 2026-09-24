@@ -93,6 +93,7 @@ To prevent rapid abuse, directional shunting has a **two-second cooldown**. The 
 - Console Status, Combat LCD, and the Shield Health HUD report the trace as **LOCAL**, **DEPARTURE**, or **ARRIVAL**, including jump distance, signature class, effective range, and remaining time.
 - Integrations can read the same non-authoritative result through the documented read-only Aegis Framework API. No integration receives jump-drive or shield-energy authority.
 - The required Aegis Visual Framework supplies the dedicated transit-pulse presentation material; detection remains in the server-authoritative Aegis runtime.
+- **Bifrost Wake Dust** adds a short cyan-to-violet particulate wake at both trace endpoints. It is a bounded, client-side cosmetic effect that scales with signature class, follows each player's Hidden and reduced-flash preferences, and cannot affect jump, shield, or damage behavior.
 
 ## Tactical profiles
 

@@ -11,6 +11,7 @@ All public project updates are recorded here. This changelog describes capabilit
 - The feature never modifies Jump Drive operation, shield energy, damage, authorization, or player identity. The public repository remains documentation-only.
 - Routed the private-beta transit pulse through the required Aegis Visual Framework's dedicated presentation material while retaining gameplay detection and authority in the shield runtime.
 - Added physical grid-size scaling: a 25 m-radius hull establishes the 1.0× / 50 km baseline; larger jumping grids create proportionally larger pulses and stronger signatures, capped at 2.5× / 125 km.
+- Added **Bifrost Wake Dust** presentation: a short cyan/violet particle wake at departure and arrival that is client-only, bounded, size-scaled, and governed by each player's Hidden and reduced-flash preferences. It supplies no gameplay authority.
 
 ### Protection reliability and per-block power controls
 
