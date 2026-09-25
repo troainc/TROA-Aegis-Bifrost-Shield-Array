@@ -1,5 +1,10 @@
 # Public Documentation Log
 
+## 2026-09-24 — Native framework HUD repair
+
+- Recorded that the private-beta Shield Health HUD is a native client session component in the required Visual Framework, without Pulsar or any external loader.
+- Recorded retirement of the intrusive central notification fallback. No source, binaries, packages, assets, tests, or private implementation details were added to this public repository.
+
 ## 2026-09-24
 
 - Documented Bifrost Transit Signature: private-beta, server-authoritative, read-only jump-event telemetry with bounded 1 km/50 km/15 second behavior and Console, Combat LCD, HUD, and API readouts.

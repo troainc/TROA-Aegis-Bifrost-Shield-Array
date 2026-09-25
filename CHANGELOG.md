@@ -4,6 +4,11 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Native Visual Framework Shield Health HUD
+
+- Replaced the optional external-loader route with a native client session renderer included in the required Aegis Visual Framework; Pulsar is not part of the supported HUD path.
+- The Shield Health panel is rendered at the top-right from read-only telemetry. The intrusive centre-screen notification fallback is intentionally disabled.
+
 ### Bifrost Transit Signature
 
 - Added the private-beta **Bifrost Transit Signature** feature: a server-authoritative, read-only indicator for loaded vanilla jump-drive displacements of at least 1 km within 50 km of an active Aegis construct.

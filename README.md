@@ -135,7 +135,7 @@ It reports:
 
 Use the **Bifrost Console** for **HUD shield status**, **HUD layout**, color, opacity, reduced-flash, sounds, and shield-presentation preferences. These are player-local preferences; no module block duplicates them.
 
-For private-beta testing, the required Visual Framework includes a private client-side renderer for the exact top-right widget. It draws locally every client update from a read-only snapshot refreshed four times per second. It never sends controls, changes a shield, or changes another player’s display. The normal game notification fallback remains available if that optional renderer is unavailable.
+For private-beta testing, the required Visual Framework includes a native client-side renderer for the exact top-right widget. It draws locally every client update from a read-only snapshot refreshed four times per second. It requires no Pulsar or external loader, never sends controls, changes a shield, or changes another player’s display. The normal game notification fallback is intentionally disabled because it cannot respect the requested screen position.
 
 ## Shield presentation
 
