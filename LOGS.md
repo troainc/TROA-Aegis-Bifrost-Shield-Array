@@ -2,8 +2,9 @@
 
 ## 2026-09-24 — Native framework HUD repair
 
-- Recorded that the private-beta Shield Health HUD is a native client session component in the required Visual Framework, without Pulsar or any external loader.
+- Recorded that the private-beta Shield Health HUD is a native client session component in the required Visual Framework, with no external loader dependency.
 - Recorded retirement of the intrusive central notification fallback. No source, binaries, packages, assets, tests, or private implementation details were added to this public repository.
+- Documented the supported Text HUD API presentation route and retained the repository's source-free documentation-only boundary.
 
 ## 2026-09-24
 

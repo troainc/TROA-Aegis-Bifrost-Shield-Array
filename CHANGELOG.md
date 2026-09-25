@@ -6,8 +6,9 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ### Native Visual Framework Shield Health HUD
 
-- Replaced the optional external-loader route with a native client session renderer included in the required Aegis Visual Framework; Pulsar is not part of the supported HUD path.
+- Replaced the optional external-loader route with a native client session renderer included in the required Aegis Visual Framework.
 - The Shield Health panel is rendered at the top-right from read-only telemetry. The intrusive centre-screen notification fallback is intentionally disabled.
+- Reworked the panel onto the supported Text HUD API render surface after the game rejected direct custom GUI calls from a regular mod. The Visual Framework retains ownership of Aegis telemetry, layout, colors, and its GUI asset; no source or external assets are published here.
 
 ### Bifrost Transit Signature
 
