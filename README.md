@@ -25,6 +25,12 @@ Aegis is not intended to be a magic “invulnerable ship” switch. A working sh
 4. Watch shield charge, heat, incoming pressure, and bank health through the player HUD or Console/LCD.
 5. Adapt: reinforce a threatened side, change profile, vent heat, or allow the system to recharge.
 
+### Shield Health HUD and Bifrost Detector
+
+The private-beta Visual Framework HUD is a compact **top-right Integrity Matrix**, not a centre-screen notification. Its original Aegis presentation combines a circular field-integrity focus with segmented field and six-facing meters, heat/power diagnostics, current profile/mode, and an unobtrusive system rail. It is player-local and display-only: server authority remains with the shield runtime.
+
+The same panel includes the **Bifrost Detector**. It stays `SCAN CLEAR` until the bounded Transit Signature sensor observes a qualifying loaded Jump Drive displacement. During the temporary signature window it identifies Local, Departure, or Arrival state, jump distance, size class, and remaining trace lifetime. It does not interfere with Jump Drives, targeting, energy, damage, or player permissions.
+
 ## Block roles
 
 | Block | Purpose |
