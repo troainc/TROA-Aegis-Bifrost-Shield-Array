@@ -4,6 +4,12 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Live Integrity Matrix instrumentation
+
+- The private-beta top-right Integrity Matrix now fills its authored instrument wells from read-only shield telemetry: total field health, six directional banks, heat, and power allocation.
+- Field and directional bars communicate usable protection with cyan, warning with gold, and critical depletion with red. Heat uses its own rising-risk color route; power has a distinct blue route. These meters are player-local presentation only.
+- The Aegis shield bubble remains an independently textured field effect. HUD bar rendering cannot replace or alter that field material.
+
 ### Integrity Matrix session-lifecycle repair
 
 - Corrected an internal private-beta lifecycle issue where the engine initialized the required Visual Framework HUD renderer but could omit a separate bridge component. The read-only Integrity Matrix bridge now starts inside the confirmed live framework session.
