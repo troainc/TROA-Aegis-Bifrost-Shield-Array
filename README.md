@@ -161,14 +161,26 @@ The Bifrost Console exposes full field administration, master field power, frame
 
 All Aegis functional blocks retain native Space Engineers controls such as On/Off, Show in Terminal, Show on HUD, name, ownership, and normal toolbar placement.
 
-The Console LCD is always the primary construct readout. Use the Console terminal **Console LCD mode** selector to choose Status, Compact, Combat, or Off; it writes the mode setting automatically. For an additional same-construct LCD, use **Custom Data** to opt into a display mode:
+The Console LCD is always the primary construct readout. Configure it—or any same-construct vanilla or modded block that exposes an LCD text surface—through its **Custom Data** to opt into a display mode:
 
 ```ini
 [TROA Aegis LCD]
 Mode=Status
 ```
 
-An external panel may instead be named `[Aegis LCD]`; it safely defaults to the Status view. Both routes refresh server-side once per second.
+All opted-in surfaces refresh server-side once per second. `Matrix` is a full live LCD version of the Integrity Matrix: six directional shield banks, Heat Shields, thermal stabilization, atmosphere seal, suit charge, jump detection, and BI-FROST Transit. It fits the entire dashboard to ordinary 3×3, 5×3, and 5×5 LCDs. On a multi-surface block, add `Surface=0` (or another zero-based surface index).
+
+To combine two 4×3 panels into one wide Matrix, set the left panel to `Layout=4x3` and `Tile=1/2`, and the right panel to `Layout=4x3` and `Tile=2/2`:
+
+```ini
+[TROA Aegis LCD]
+Mode=Matrix
+Layout=4x3
+Tile=1/2
+HUD=Off
+```
+
+`HUD=Off` makes that configured physical dashboard a local replacement for the player's top-right HUD while they are within 25 m. It does not alter another player's preference, shield behavior, or server state; leaving the dashboard restores the normal player HUD. The Bifrost Console HUD checkbox remains available as the permanent player-local toggle.
 
 Supported values:
 
@@ -177,6 +189,7 @@ Supported values:
 | `Status` | Complete diagnostics, hardware state, field energy, and banks. |
 | `Compact` | Short state, charge, and heat readout. |
 | `Combat` | Compact readout plus last hit direction, incoming pressure, and shunt cooldown. |
+| `Matrix` | Full live Integrity Matrix dashboard with all six banks, heat, life-support services, jump detection, and transit state. |
 | `Off` | Clears the Console LCD output. |
 
 ## Compatibility and the Aegis Framework
