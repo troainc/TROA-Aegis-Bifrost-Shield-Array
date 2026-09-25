@@ -10,6 +10,7 @@ All public project updates are recorded here. This changelog describes capabilit
 - Extended the read-only HUD telemetry contract to v3 while retaining v2 compatibility. The additional visual-only fields report Bifrost Transit Signature state, jump distance, signature class, detection range, and remaining lifetime.
 - Added the live **Bifrost Detector** rail. It displays `SCAN CLEAR` outside an event and presents temporary Local, Departure, or Arrival alert data for qualifying Jump Drive signatures. It remains cosmetic and cannot alter Jump Drive operation or shield authority.
 - Folded the owned text-HUD render service into the required TROA Aegis Visual Framework. Private testing no longer requires a separate HUD Workshop item; the public repository remains documentation-only.
+- Corrected private-beta HUD material loading and isolated its internal registration channel from the framework readiness signal. The shield bubble retains its original textured field presentation rather than a flat fallback color.
 
 ### Native Visual Framework Shield Health HUD
 
