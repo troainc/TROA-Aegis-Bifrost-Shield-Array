@@ -4,6 +4,12 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Integrity Matrix session-lifecycle repair
+
+- Corrected an internal private-beta lifecycle issue where the engine initialized the required Visual Framework HUD renderer but could omit a separate bridge component. The read-only Integrity Matrix bridge now starts inside the confirmed live framework session.
+- The repair retains the intended player-facing route: one original Aegis top-right HUD panel, live read-only shield telemetry, no external HUD Workshop dependency, and no centre-screen text fallback.
+- Runtime acceptance remains pending a fresh in-game load that records the framework bridge, telemetry, renderer, and live shield-snapshot markers. This public repository continues to contain documentation only.
+
 ### Graphical Integrity Matrix and Bifrost Detector
 
 - Replaced the provisional text-only private-beta shield telemetry treatment with the original Aegis **top-right Integrity Matrix**: circular integrity focus, segmented field meter, six directional bank meters, heat/power diagnostics, and a compact system rail.
