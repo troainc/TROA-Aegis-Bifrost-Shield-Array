@@ -4,6 +4,13 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Full graphical Integrity Matrix
+
+- Replaced the private-beta text-and-frame treatment with the original Aegis **Integrity Matrix**: a complete graphical, no-text player HUD rendered by the required TROA Aegis Visual Framework.
+- The matrix presents live segmented wells for fore, aft, port, starboard, dorsal, ventral, heat margin, thermal stabilization, atmosphere seal, and suit-induction service. A direction ring, change rails, Jump Detection scan band, and Bifrost transit lamp provide visual state without a text overlay.
+- The player HUD remains cosmetic and local. Its expanded read-only visual data cannot alter shield energy, life support, suit charging, jump drives, damage, controls, or other players' displays.
+- Source, production art files, packaged builds, and implementation details remain private; this repository documents expected behavior only.
+
 ### Live Integrity Matrix instrumentation
 
 - The private-beta top-right Integrity Matrix now fills its authored instrument wells from read-only shield telemetry: total field health, six directional banks, heat, and power allocation.
