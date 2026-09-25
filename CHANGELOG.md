@@ -4,9 +4,15 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
-### Integrity Matrix telemetry repair
+### Functional Integrity Matrix rebuild
 
-- Corrected a private-beta decoder mismatch that could reject the newest read-only shield snapshot after the Integrity Matrix appeared. The top-right graphical instruments now refresh from the live state rather than remaining static.
+- Rebuilt the private-beta graphical HUD around a real read-only state pipeline rather than a static template with direct overlays. The framework now separates authoritative telemetry, normalized GUI state, centralized template geometry, elapsed-time visual transitions, and composition.
+- The authored Matrix regions are driven by actual directional shield-bank capacity, heat margin, thermal stabilization, atmosphere seal, suit-induction readiness, Jump Detection activity, Bifrost transit, and shield lifecycle state. The HUD remains cosmetic and player-local.
+- Added build and validation coverage for the graphical state pipeline. Source, assets, and internal implementation remain private.
+
+### Integrity Matrix telemetry contract verification
+
+- Added private-beta contract verification for the newest read-only shield snapshot so the graphical instrument bindings retain their exact field positions as the HUD evolves.
 - Meter changes remain presentation-only: the framework reads shield state every 15 ticks and cannot alter energy, sliders, damage, life support, or player controls.
 
 ### Integrity Matrix display correction
