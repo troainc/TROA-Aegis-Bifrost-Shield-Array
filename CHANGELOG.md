@@ -4,6 +4,11 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Integrity Matrix display correction
+
+- Corrected the private-beta top-right Integrity Matrix proportions for Space Engineers' HUD billboard rendering. The panel now retains its full authored 3:1 composition instead of appearing as a compressed horizontal strip.
+- The private framework now uses an uncompressed alpha panel asset, preserving the original linework, meter divisions, and directional details at the intended HUD scale. This is a presentation-only correction; it does not change shield authority or gameplay behavior.
+
 ### Full graphical Integrity Matrix
 
 - Replaced the private-beta text-and-frame treatment with the original Aegis **Integrity Matrix**: a complete graphical, no-text player HUD rendered by the required TROA Aegis Visual Framework.
