@@ -4,6 +4,11 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Integrity Matrix telemetry repair
+
+- Corrected a private-beta decoder mismatch that could reject the newest read-only shield snapshot after the Integrity Matrix appeared. The top-right graphical instruments now refresh from the live state rather than remaining static.
+- Meter changes remain presentation-only: the framework reads shield state every 15 ticks and cannot alter energy, sliders, damage, life support, or player controls.
+
 ### Integrity Matrix display correction
 
 - Corrected the private-beta top-right Integrity Matrix proportions for Space Engineers' HUD billboard rendering. The panel now retains its full authored 3:1 composition instead of appearing as a compressed horizontal strip.
