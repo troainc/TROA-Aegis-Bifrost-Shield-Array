@@ -4,6 +4,11 @@ All public project updates are recorded here. This changelog describes capabilit
 
 ## Unreleased
 
+### Authored Integrity Matrix readouts
+
+- Restored the approved HUD text layout as live owned-renderer elements: directional labels and bank percentages, Heat Shields, Jump Detection, Thermal Stabilization, Atmosphere Seal, Suit Charge, and BI-FROST Transit.
+- The Matrix no longer represents sample "100%" art as live data. Each percentage, detection string, distance, and lifecycle state now follows the private framework's read-only shield snapshot and the same smoothed GUI state as its corresponding bar.
+
 ### Functional Integrity Matrix rebuild
 
 - Rebuilt the private-beta graphical HUD around a real read-only state pipeline rather than a static template with direct overlays. The framework now separates authoritative telemetry, normalized GUI state, centralized template geometry, elapsed-time visual transitions, and composition.
@@ -20,9 +25,9 @@ All public project updates are recorded here. This changelog describes capabilit
 - Corrected the private-beta top-right Integrity Matrix proportions for Space Engineers' HUD billboard rendering. The panel now retains its full authored 3:1 composition instead of appearing as a compressed horizontal strip.
 - The private framework now uses an uncompressed alpha panel asset, preserving the original linework, meter divisions, and directional details at the intended HUD scale. This is a presentation-only correction; it does not change shield authority or gameplay behavior.
 
-### Full graphical Integrity Matrix
+### Full graphical Integrity Matrix (initial graphical-only layer; superseded by live authored readouts)
 
-- Replaced the private-beta text-and-frame treatment with the original Aegis **Integrity Matrix**: a complete graphical, no-text player HUD rendered by the required TROA Aegis Visual Framework.
+- Replaced the private-beta text-and-frame treatment with the original Aegis **Integrity Matrix** graphical layer rendered by the required TROA Aegis Visual Framework. The current Matrix additionally renders its approved labels and live readouts through the owned renderer.
 - The matrix presents live segmented wells for fore, aft, port, starboard, dorsal, ventral, heat margin, thermal stabilization, atmosphere seal, and suit-induction service. A direction ring, change rails, Jump Detection scan band, and Bifrost transit lamp provide visual state without a text overlay.
 - The player HUD remains cosmetic and local. Its expanded read-only visual data cannot alter shield energy, life support, suit charging, jump drives, damage, controls, or other players' displays.
 - Source, production art files, packaged builds, and implementation details remain private; this repository documents expected behavior only.
