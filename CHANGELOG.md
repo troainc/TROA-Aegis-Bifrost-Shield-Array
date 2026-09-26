@@ -9,6 +9,7 @@ All public project updates are recorded here. This changelog describes capabilit
 - Expanded same-construct LCD output from individual text panels to every compatible vanilla or modded text-surface provider. The opt-in `Matrix` mode renders the complete live Integrity Matrix rather than a diagnostic text-only status.
 - Matrix automatically fits common 3×3, 5×3, and 5×5 screens. A paired 4×3-wide installation uses `Layout=4x3` and `Tile=1/2` / `Tile=2/2` to join two screens into one dashboard.
 - `HUD=Off` is a local presentation choice: while near that configured LCD, a player’s top-right Matrix hides to prevent duplicate HUDs and restores on leaving. It cannot alter shield behavior or other players' display choices.
+- Corrected Matrix update behavior: its surfaces redraw at 10 Hz from current shield-bank telemetry. Damage falls register promptly; recharge and service restoration animate smoothly instead of leaving a one-second static dashboard image.
 
 ### Authored Integrity Matrix readouts
 

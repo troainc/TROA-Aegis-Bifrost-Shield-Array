@@ -168,7 +168,7 @@ The Console LCD is always the primary construct readout. Configure it—or any s
 Mode=Status
 ```
 
-All opted-in surfaces refresh server-side once per second. `Matrix` is a full live LCD version of the Integrity Matrix: six directional shield banks, Heat Shields, thermal stabilization, atmosphere seal, suit charge, jump detection, and BI-FROST Transit. It fits the entire dashboard to ordinary 3×3, 5×3, and 5×5 LCDs. On a multi-surface block, add `Surface=0` (or another zero-based surface index).
+`Matrix` surfaces refresh from live shield banks at 10 Hz, with prompt damage drops and smooth recharge/service recovery rather than a one-second static image. It is a full live LCD version of the Integrity Matrix: six directional shield banks, Heat Shields, thermal stabilization, atmosphere seal, suit charge, jump detection, and BI-FROST Transit. It fits the entire dashboard to ordinary 3×3, 5×3, and 5×5 LCDs. On a multi-surface block, add `Surface=0` (or another zero-based surface index).
 
 To combine two 4×3 panels into one wide Matrix, set the left panel to `Layout=4x3` and `Tile=1/2`, and the right panel to `Layout=4x3` and `Tile=2/2`:
 
