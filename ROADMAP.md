@@ -2,6 +2,12 @@
 
 This roadmap distinguishes implemented beta work from release certification. A feature can be implemented and still not be released until it has passed in-game acceptance testing.
 
+## Status checkpoint — 2026-09-27
+
+The private Alpha source compiles and passes automated validation/package-integrity checks; these are not gameplay test results. Keep the acceptance work below open, particularly configurable player/faction/entity field policy, field-crossing and projectile behavior, vanilla/WeaponCore damage interception, range-based seal power and ship/station O2/thermal behavior, real-time suit/HUD/LCD telemetry, and shield-hit/jump effects. Public Workshop listings exist; this checkpoint does not announce a new version. See [STEAM.md](STEAM.md) for current listings.
+
+The 2026-09-26 private HUD candidate changes the panel/cell/text renderer to viewport-pixel placement to address the grey overlay and bar overlap. Confirm its actual position, scale, legibility, and non-obstruction in a clean game session before closing this UI gate.
+
 ## Current: Reliable Beta acceptance
 
 The private beta contains the core lifecycle, block roles, HUD/LCD, directional gameplay, visuals, sound, and compatibility framework described in the README. The following acceptance work remains before any 1.0 release decision:
@@ -27,7 +33,7 @@ The private beta contains the core lifecycle, block roles, HUD/LCD, directional 
 - [ ] Verify role-specific terminal and toolbar controls: Core/Console master administration, Capacitor reserve allocation, Flux recharge/venting, Harmonic profile/tuning, Relay coverage/facings, Console-only personal presentation, native Space Engineers functional-block controls, and the explicit module On/Off switch on every Aegis block.
 - [ ] Verify direct player interaction on the visible surface of every Core, Console, Capacitor Rune, Flux Weave, Harmonic Modulator, and Gjallarhorn Relay variant; no terminal interaction may require aiming at an inaccessible top-side point.
 - [ ] Verify Bubble, Hybrid, Hull Impact, On Contact, Hidden, opacity, palette, and reduced-flash options.
-- [ ] Verify Full and Compact Shield Health HUD modes, hide/show preference, top-right Text HUD API presentation, Ship/Station telemetry, six-bank/pressure/shunt display, reconnect persistence, and no client-to-server control authority. The central notification fallback is retired.
+- [ ] Verify Full and Compact Shield Health HUD modes, hide/show preference, top-right TROA-owned Visual Framework presentation, Ship/Station telemetry, six-bank/pressure/shunt display, reconnect persistence, and no client-to-server control authority. Verify every authored Integrity Matrix label, percentage, segmented bar, trend state, Jump Detection, life-support indicator, and BI-FROST Transit state responds to the same 10 Hz read-only telemetry source as the LCD Matrix. The central notification fallback is retired.
 - [ ] Verify Bifrost Console LCD always renders its construct state and its terminal LCD Mode selector switches outputs, and external same-construct LCD routing works through `[TROA Aegis LCD]` Custom Data on every vanilla/modded text-surface provider. Verify `Status`, `Compact`, `Combat`, `Matrix`, and `Off`; blank/default recovery; 10 Hz Matrix redraw; controlled-hit bank drops; smooth recharge/service recovery; reload; late join; no cross-construct output; whole-Matrix scale fitting on 3×3, 5×3, and 5×5; `Surface=` selection; the two-panel 4×3 `Tile=1/2` + `Tile=2/2` join; and local-only `HUD=Off` suppression/restoration.
 
 ### Aegis Framework and compatibility
