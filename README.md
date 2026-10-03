@@ -115,3 +115,7 @@ The HUD image below is an in-game screenshot. Hardware images are rendered desig
 The private candidate passes automated model/XML checks, game-assembly compilation, deterministic tests, and package-integrity validation. These checks prove that code compiles and packages validate; they do **not** certify gameplay or multiplayer behavior. In-world acceptance remains open for shield drain across weapon families, WeaponCore parity, filter permissions and pushback, ship/station life support and service power, HUD/LCD scaling and synchronization, jump/GPS radius and notifications, and dedicated-server performance.
 
 The public Workshop release may not include private Alpha-candidate behavior. This repository does not announce a new Workshop release. See the [roadmap](ROADMAP.md), [changelog](CHANGELOG.md), [security policy](SECURITY.md), and [license](LICENSE.md). Older project notes are historical/legacy context; the Workshop pages define the current player-facing release.
+
+## Documentation
+
+See [`docs/README.md`](docs/README.md) for a guide to the system, Workshop installation source, candidate limits, and the distinction between authoritative gameplay and client visuals.

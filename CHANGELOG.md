@@ -48,3 +48,7 @@ The foundation notes below are **legacy milestones**, retained for historical co
 ## Public repository boundary
 
 This repository contains approved public documentation and selected preview images only. It does not contain mod source, downloadable builds, private Alpha packages, test worlds, private logs, or release staging.
+
+## Documentation update - 2026-10-03
+
+- Added a documentation landing page that directs players to the current Workshop instructions and server owners to the system overview, operational limits, and candidate validation notes.
