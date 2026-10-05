@@ -1,8 +1,20 @@
 # Changelog
 
-This is a public summary of documentation and private candidate development, **not a Workshop release announcement** or source-level change history. “Current” below means the private Alpha candidate as of September 27, 2026; the public Workshop builds may be older. Use the [Workshop pages](README.md#get-aegis) for downloadable release contents and compatibility.
+This is a public summary of documentation and private candidate development, **not a Workshop release announcement** or source-level change history. “Current” below means the private Alpha candidate as of October 4, 2026; the public Workshop builds may be older. Use the [Workshop pages](README.md#get-aegis) for downloadable release contents and compatibility.
 
-## Current work — September 26–27, 2026
+## Current work — October 4, 2026
+
+### October 4 — Player controls, shield behavior, and HUD updates
+
+- **Ship and base tools:** construct owners can use tools on their own grids inside their shield field. The Console also provides a persistent Shields enabled switch; switching it off suspends Aegis power draw while preserving stored charge and settings.
+- **HUD size and bubble state:** players can choose Small, Medium, or Large HUD sizing. The HUD dims and shows **OFF** outside each player's visible shield bubble, then restores the latest telemetry on re-entry without clearing its smoothed state or pausing its animation clock. Local bubble boundaries follow each player's configured clearance and maximum bubble size.
+- **Entry and exit cues:** player-local notices and distinct sounds announce crossing into or out of the visible shield area. The longer cinematic cues honor personal sound and notification settings.
+- **Power-scaled defense:** Core power allocation scales both recharge and the shield's damage efficiency; higher allocation raises power draw and heat.
+- **Weapon diagnostics:** WeaponCore detection retries when its API loads late. Aegis's server-side damage handler remains authoritative for supported hits; WeaponCore's public observer only reports hits. Status counters help owners diagnose weapon paths. Damage from weapon paths that bypass the supported Keen callback remains a compatibility limit.
+- **Directional spillover:** after the impact-facing bank and reserve are depleted, remaining charged banks contribute to shield absorption before residual damage reaches armor.
+- **Validation:** Aegis v0.1.11 and Visual Framework v0.1.4 compiled with 0 errors and 9 existing bundled HUD warnings; their package entries match source. Dedicated-server and multiplayer gameplay acceptance remains open. These are private candidates, not Workshop announcements.
+
+## Earlier work — September 26–27, 2026
 
 ### September 27 — Shield settings, field filters, services, and impact feedback
 
@@ -31,9 +43,9 @@ This is a public summary of documentation and private candidate development, **n
 - Added a more visible client-side Heimdall-style rainbow jump pathway and shield absorption pulse. The Visual Framework remains a read-only presentation layer.
 - Full screen-resolution, panel, reload, and multiplayer acceptance remains open; screenshots/design previews are not proof of all runtime states.
 
-### Validation and release status (September 26–27)
+### Validation and release status (September 26–October 4)
 
-The private candidate passes automated model and XML checks, game-assembly compilation, 33 deterministic tests, and package-integrity validation. There are still in-game and multiplayer acceptance tasks for damage/WeaponCore coverage, filter persistence and pushback, service range and power, HUD/LCD synchronization, jump GPS notifications, and dedicated-server performance. Automated validation must not be represented as gameplay certification. No new Workshop release is announced by this changelog.
+The private candidates pass automated model/XML checks, game-assembly compilation, deterministic tests, and package-integrity validation as recorded above. In-game and multiplayer acceptance is still required for damage/WeaponCore coverage, filter persistence and pushback, service range and power, HUD/LCD synchronization and bubble-boundary transitions, jump GPS notifications, and dedicated-server performance. Automated validation is not gameplay certification. No new Workshop release is announced by this changelog.
 
 ## Legacy history — through September 25, 2026
 

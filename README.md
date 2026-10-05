@@ -2,7 +2,9 @@
 
 **A modular shield, field-services, and jump-signature system for Space Engineers ships and stations.**
 
-> **Status and accuracy:** This repository describes the private Alpha candidate and recent development work. It is a documentation-only public repository: no source code, private packages, test worlds, or development assets are published here. Automated validation confirms build/package integrity, not gameplay acceptance. The Steam Workshop pages are authoritative for the features, dependencies, compatibility, and release state of the versions players can download today.
+> **Status and accuracy:** This repository describes the private Alpha candidate and recent development work, updated October 4, 2026. It is a documentation-only public repository: no source code, private packages, test worlds, or development assets are published here. Automated validation confirms build/package integrity, not gameplay acceptance. The Steam Workshop pages are authoritative for the features, dependencies, compatibility, and release state of the versions players can download today.
+
+Recent private-candidate work includes owner tool access inside personal shield fields, a Console shield switch and HUD size setting, player-local bubble entry/exit notices, and a HUD that powers down outside the visible bubble and resumes with current telemetry on re-entry. See the [changelog](CHANGELOG.md) for the October 4 development summary. These updates are not announced as Workshop releases.
 
 ## Get Aegis
 
