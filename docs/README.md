@@ -8,3 +8,8 @@ This repository documents a private Alpha candidate; the Workshop pages are the 
 - Use the [Workshop pages](https://steamcommunity.com/sharedfiles/filedetails/?id=3804076590) for player installation and current released compatibility. The public GitHub repository is documentation only; it does not provide an installable candidate package.
 
 Do not treat HUD appearance as proof that the server-side shield or service is online. Confirm operating state in the Core/Console and validate gameplay in a controlled world.
+
+## Start here
+
+Read the [detailed user and operator guide](USER_GUIDE.md) for supported setup, feature workflows, safe operation, and troubleshooting.
+

@@ -1,3 +1,9 @@
+## Public operator documentation expansion - 2026-10-06
+
+- Added a detailed user guide under docs/USER_GUIDE.md and linked it from the documentation index and root README.
+- Documented current setup, feature ownership, command/config references, operational workflows, safety boundaries, and version/status limitations using the published behavior.
+- Added repository-local context, contribution instructions, and a dated documentation log entry. No private source or credentials are included.
+
 # Changelog
 
 This is a public summary of documentation and private candidate development, **not a Workshop release announcement** or source-level change history. “Current” below means the private Alpha candidate as of October 4, 2026; the public Workshop builds may be older. Use the [Workshop pages](README.md#get-aegis) for downloadable release contents and compatibility.
@@ -64,3 +70,4 @@ This repository contains approved public documentation and selected preview imag
 ## Documentation update - 2026-10-03
 
 - Added a documentation landing page that directs players to the current Workshop instructions and server owners to the system overview, operational limits, and candidate validation notes.
+

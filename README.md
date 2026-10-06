@@ -121,3 +121,9 @@ The public Workshop release may not include private Alpha-candidate behavior. Th
 ## Documentation
 
 See [`docs/README.md`](docs/README.md) for a guide to the system, Workshop installation source, candidate limits, and the distinction between authoritative gameplay and client visuals.
+
+
+## Documentation
+
+Use the [documentation index](docs/README.md) and [detailed operator guide](docs/USER_GUIDE.md) for setup, everyday use, feature behavior, and troubleshooting. Check the changelog and the current release before applying version-specific instructions.
+
