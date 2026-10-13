@@ -1,12 +1,20 @@
-## Public operator documentation expansion - 2026-10-06
-
-- Added a detailed user guide under docs/USER_GUIDE.md and linked it from the documentation index and root README.
-- Documented current setup, feature ownership, command/config references, operational workflows, safety boundaries, and version/status limitations using the published behavior.
-- Added repository-local context, contribution instructions, and a dated documentation log entry. No private source or credentials are included.
-
 # Changelog
 
-This is a public summary of documentation and private candidate development, **not a Workshop release announcement** or source-level change history. “Current” below means the private Alpha candidate as of October 4, 2026; the public Workshop builds may be older. Use the [Workshop pages](README.md#get-aegis) for downloadable release contents and compatibility.
+This public changelog distinguishes private candidate development and documentation updates from Steam Workshop releases. It does not announce a new Workshop version.
+
+## 2026-10-12 — Private-candidate deformation stability follow-up
+
+- A reported fatal during grid deformation traced to construct membership being rebuilt synchronously inside Aegis's damage callback. The private candidate now defers that refresh to the next session simulation update.
+- The source validator, deterministic checks, and combined compile/package validation passed (0 errors; 9 existing framework warnings). These checks do not establish dedicated-server runtime acceptance.
+- This is a private-candidate maintenance change only. No Steam Workshop package was updated or announced; use the Workshop pages for the currently downloadable release.
+
+## Public operator documentation expansion — 2026-10-06
+
+- Added a detailed user guide under docs/USER_GUIDE.md and linked it from the documentation index and root README.
+- Documented setup, feature ownership, operational workflows, safety boundaries, and version/status limitations, with the Workshop pages identified as authoritative for released behavior.
+- Added repository guidance, context, and a dated documentation log entry. No private source or credentials are included.
+
+This is a public summary of documentation and private candidate development, **not a Workshop release announcement** or source-level change history. “Current” below means the private Alpha candidate as of October 12, 2026; the public Workshop builds may be older. Use the [Workshop pages](README.md#get-aegis) for downloadable release contents and compatibility.
 
 ## Current work — October 4, 2026
 

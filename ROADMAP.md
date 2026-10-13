@@ -19,7 +19,7 @@ The private Foundry candidate includes the shield, field-policy, service, HUD/LC
 
 ### Field filter and power
 
-- [ ] Exercise every filter category (Players, Factions, Grids, Floating Objects, Other Entities) in Whitelist and Blacklist modes.
+- [ ] Exercise every supported filter category (Players, Factions, Grids, Floating Objects) in Whitelist and Blacklist modes. Other Entities and voxel maps are not filter categories.
 - [ ] Test adding/removing named entries, offline entities, persistence, owner/admin access, and late-join synchronization.
 - [ ] Test Automatic Push/Pull and boundary settings at 0, 10, 100, and 200 m for characters, grids, and physical objects. Confirm field crossings and performance.
 - [ ] Confirm larger field range and directional reinforcement settings increase Core power demand as documented.

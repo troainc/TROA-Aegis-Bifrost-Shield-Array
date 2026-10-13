@@ -2,9 +2,9 @@
 
 **A modular shield, field-services, and jump-signature system for Space Engineers ships and stations.**
 
-> **Status and accuracy:** This repository describes the private Alpha candidate and recent development work, updated October 4, 2026. It is a documentation-only public repository: no source code, private packages, test worlds, or development assets are published here. Automated validation confirms build/package integrity, not gameplay acceptance. The Steam Workshop pages are authoritative for the features, dependencies, compatibility, and release state of the versions players can download today.
+> **Status and accuracy:** This repository describes the private Alpha candidate and recent development work, updated October 12, 2026. It is a documentation-only public repository: no source code, private packages, test worlds, or development assets are published here. Automated validation confirms build/package integrity, not gameplay acceptance. The Steam Workshop pages are authoritative for the features, dependencies, compatibility, and release state of the versions players can download today.
 
-Recent private-candidate work includes owner tool access inside personal shield fields, a Console shield switch and HUD size setting, player-local bubble entry/exit notices, and a HUD that powers down outside the visible bubble and resumes with current telemetry on re-entry. See the [changelog](CHANGELOG.md) for the October 4 development summary. These updates are not announced as Workshop releases.
+Recent private-candidate work includes owner tool access inside personal shield fields, a Console shield switch and HUD size setting, player-local bubble entry/exit notices, and a HUD that powers down outside the visible bubble and resumes with current telemetry on re-entry. A maintenance change also moved construct refresh work out of the physics damage callback after a fatal deformation report; this source change passed automated validation but still needs dedicated-server acceptance. It is private candidate work, not part of a newly announced Workshop release. See the [changelog](CHANGELOG.md) for dates, validation status, and release boundaries.
 
 ## Get Aegis
 
